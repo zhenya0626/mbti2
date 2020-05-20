@@ -1,0 +1,58 @@
+/* --------------------------------------------- */
+/* ▼モバイルファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+* {
+    color: #bbb;
+}
+body {
+    background-color: #222;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+h1 {
+    display: block;
+    width: fit-content;
+    font-size: 3em;
+    margin: 1em 30vw;
+    width: 80vw;
+    text-align: center;
+    border-bottom: 1px #bbb solid;
+    padding-bottom: 0.8em;
+}
+img {
+    width: 90vw;
+}
+p {
+    padding: 0vw 10vw 10vw 10vw;
+    letter-spacing: 0.2px;
+    line-height: 64px;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        max-width: 800px;
+        font-size: 1.2em;
+    }
+    img {
+        width: 400px;
+    }
+
+}
