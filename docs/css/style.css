@@ -1,0 +1,40 @@
+body{
+    background-color: #333;
+}
+.content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.content .title{
+    color: #eeeeee;
+    font-size: 30px;
+    
+}
+.groups {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.group {
+    display: flex;
+    color: #eeeeee;
+    margin: 20px;
+}
+.group .personaliy{
+    color: #eeeeee;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px 15px 10px;
+}
+.group .personaliy .chara_img {
+    width: 250px;
+    display: block;
+    margin-bottom: 5px;
+}
