@@ -1,6 +1,10 @@
+/* --------------------------------------------- */
+/* ▼モバイルファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
 body{
     background-color: #333;
 }
+
 .content {
     display: flex;
     flex-flow: column;
@@ -8,9 +12,10 @@ body{
     align-items: center;
     padding: 20px;
 }
+
 .content .title{
     color: #eeeeee;
-    font-size: 30px;
+    font-size: 5rem;
     
 }
 .groups {
@@ -21,6 +26,7 @@ body{
 }
 .group {
     display: flex;
+    flex-flow: column;
     color: #eeeeee;
     margin: 20px;
 }
@@ -34,7 +40,38 @@ body{
     margin: 20px 15px 10px;
 }
 .group .personaliy .chara_img {
-    width: 250px;
+    width: 80vw;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+.group .personaliy .name {
+    font-size: 3rem;
+}
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+
+    .content .title{
+        font-size: 30px;
+    }
+    .group {
+        flex-flow: row;
+    }
+    .group .personaliy .name {
+        font-size: 15px;
+    }
+
+    .group .personaliy .chara_img {
+        width: 250px;
+        margin-bottom: 5px;
+    }
+
+
 }
