@@ -1,8 +1,15 @@
 /* --------------------------------------------- */
 /* ▼モバイルファースト (全環境に共通のデザイン) */
 /* --------------------------------------------- */
-body{
-    background-color: #222;
+
+body {
+	box-sizing: border-box;
+	font-family: "Noto Sans Japanese",sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.6;
+	color: #fff;
+	background: #0c0a26 url(../img/bg.png) center top / calc(260px / 2) fixed;
 }
 
 .content {
@@ -13,10 +20,28 @@ body{
     padding: 20px;
 }
 
-.content .title{
-    color: #eeeeee;
-    font-size: 5rem;
-    
+.content .title_wrapper{
+    color: #eeeeee; 
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .title_wrapper .title_text{
+    font-size: 25px;
+}
+.content .title_wrapper .text_button{
+    border: 1px #fff solid;
+    border-radius: 30px;
+    height: 50px;
+    width: 300px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .groups {
     display: flex;
@@ -45,7 +70,7 @@ body{
     margin-bottom: 20px;
 }
 .group .personaliy .name {
-    font-size: 3rem;
+    font-size: 16pxm;
 }
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */

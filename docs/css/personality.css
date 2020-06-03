@@ -4,18 +4,25 @@
 * {
     color: #bbb;
 }
+
 body {
-    background-color: #222;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 4em;
+    box-sizing: border-box;
+	font-family: "Noto Sans Japanese",sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.6;
+	color: #fff;
+	background: #0c0a26 url(../img/bg.png) center top / calc(260px / 2) fixed;
 }
 h1 {
     display: block;
     width: fit-content;
-    font-size: 3em;
+    font-size: 25px;
     margin: 1em 30vw;
     width: 80vw;
     text-align: center;
@@ -31,7 +38,7 @@ p {
     line-height: 64px;
     width: 80vw;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 16px;
 }
 
 /* -------------------------------------------- */
